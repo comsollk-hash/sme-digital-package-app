@@ -1,0 +1,16 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="640" rx="38" fill="#07111f"/>
+  <circle cx="220" cy="90" r="180" fill="#38BDF8" fill-opacity="0.25"/>
+  <circle cx="1020" cy="120" r="210" fill="#A78BFA" fill-opacity="0.22"/>
+  <rect x="90" y="80" width="1020" height="480" rx="32" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16"/>
+  <rect x="140" y="135" width="300" height="110" rx="24" fill="white" fill-opacity="0.10"/>
+  <rect x="480" y="135" width="300" height="110" rx="24" fill="white" fill-opacity="0.10"/>
+  <rect x="820" y="135" width="240" height="110" rx="24" fill="white" fill-opacity="0.10"/>
+  <rect x="140" y="295" width="420" height="210" rx="28" fill="white" fill-opacity="0.10"/>
+  <rect x="600" y="295" width="460" height="210" rx="28" fill="white" fill-opacity="0.10"/>
+  <path d="M650 448C710 390 760 415 810 360C870 293 930 334 1018 250" stroke="#38BDF8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M190 430L250 370L305 405L385 330L510 455" stroke="#A78BFA" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="140" y="212" fill="white" font-family="Arial" font-size="42" font-weight="700">SME Dashboard</text>
+  <text x="480" y="212" fill="#BAE6FD" font-family="Arial" font-size="36" font-weight="700">PDF Ready</text>
+  <text x="820" y="212" fill="#BBF7D0" font-family="Arial" font-size="36" font-weight="700">Growth</text>
+</svg>

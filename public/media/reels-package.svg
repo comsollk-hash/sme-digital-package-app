@@ -1,0 +1,12 @@
+<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="520" rx="30" fill="#0B1220"/>
+  <rect x="160" y="52" width="250" height="415" rx="38" fill="white" fill-opacity="0.10" stroke="white" stroke-opacity="0.18"/>
+  <rect x="490" y="52" width="250" height="415" rx="38" fill="white" fill-opacity="0.10" stroke="white" stroke-opacity="0.18"/>
+  <circle cx="285" cy="240" r="80" fill="#38BDF8" fill-opacity="0.24"/>
+  <circle cx="615" cy="240" r="80" fill="#A78BFA" fill-opacity="0.24"/>
+  <path d="M268 205L330 240L268 275V205Z" fill="white" fill-opacity="0.84"/>
+  <path d="M598 205L660 240L598 275V205Z" fill="white" fill-opacity="0.84"/>
+  <rect x="200" y="365" width="170" height="16" rx="8" fill="white" fill-opacity="0.45"/>
+  <rect x="530" y="365" width="170" height="16" rx="8" fill="white" fill-opacity="0.45"/>
+  <text x="160" y="500" fill="#C4B5FD" font-family="Arial" font-size="34" font-weight="700">Short-form Reels</text>
+</svg>
