@@ -42,7 +42,7 @@ const socialServices: Service[] = [
     price: 50000,
     priceSuffix: '/ month',
     featured: true,
-    media: '/media/social-media.svg',
+    media: '/media/social-media.webp',
     features: ['4 creative image posts', '2 short-form reels', 'Ideal for Instagram, Facebook and LinkedIn', 'Basic content direction included']
   },
   {
@@ -53,7 +53,7 @@ const socialServices: Service[] = [
     description: 'For businesses that need branded social media graphics without reels or full monthly handling.',
     price: 35000,
     priceSuffix: '/ month',
-    media: '/media/poster-package.svg',
+    media: '/media/poster-package.webp',
     features: ['5 social media posts', 'Branded visual direction', 'Suitable for announcements and promotions', 'Clean SME-friendly presentation']
   },
   {
@@ -64,7 +64,7 @@ const socialServices: Service[] = [
     description: 'A short-form video package designed for reach, attention and platform-native content discovery.',
     price: 50000,
     priceSuffix: '/ month',
-    media: '/media/reels-package.svg',
+    media: '/media/reels-package.webp',
     features: ['5 short-form reels', 'Best for Instagram Reels, TikTok and Shorts', 'Hook-led content structure', 'Strong visibility-driven format']
   }
 ];
@@ -79,7 +79,7 @@ const websiteServices: Service[] = [
     description: 'A clean, simple business website for SMEs that need to look professional online quickly.',
     price: 75000,
     priceSuffix: '/ project',
-    media: '/media/static-website.svg',
+    media: '/media/static-website.webp',
     features: ['Home, About and Contact/Service page', 'Basic SEO setup', 'Mobile responsive layout', 'Suitable for new SMEs']
   },
   {
@@ -92,7 +92,7 @@ const websiteServices: Service[] = [
     price: 150000,
     priceSuffix: '/ project',
     featured: true,
-    media: '/media/advanced-website.svg',
+    media: '/media/advanced-website.webp',
     features: ['Website setup or improvement', 'Advanced SEO implementation', 'Speed optimisation', 'Basic security setup']
   },
   {
@@ -104,7 +104,7 @@ const websiteServices: Service[] = [
     description: 'Monthly support for SMEs that need their website kept updated, stable and technically monitored.',
     price: 50000,
     priceSuffix: '/ month',
-    media: '/media/maintenance.svg',
+    media: '/media/maintenance.webp',
     features: ['Content updates', 'Plugin/theme update checks', 'Speed and security monitoring', 'Ongoing technical support']
   }
 ];
@@ -120,19 +120,19 @@ const initialEstimateItems: EstimateItem[] = [
 
 const mediaHighlights = [
   {
-    title: 'Content that explains the business',
-    text: 'Use this area for client work samples, before/after social layouts, campaign screenshots or SME brand visuals.',
-    image: '/media/content-showcase.svg'
+    title: 'Content that builds visibility',
+    text: 'Receive professionally designed social media posts, promotional creatives and short-form reel concepts tailored to your brand.',
+    image: '/media/content-showcase.webp'
   },
   {
-    title: 'Website credibility built in',
-    text: 'Add website mockups, speed screenshots, portfolio examples or SEO audit previews here.',
-    image: '/media/website-showcase.svg'
+    title: 'Website & SEO Support',
+    text: 'Get a clean business website, improved SEO setup, faster loading speed and basic security support for stronger online credibility.',
+    image: '/media/advanced-website.webp'
   },
   {
-    title: 'Proposal-ready PDF exports',
-    text: 'Generate a single estimate PDF or export the full page as a client-ready document.',
-    image: '/media/pdf-showcase.svg'
+    title: 'Digital Growth',
+    text: 'Build a consistent social media presence that helps your business stay visible, trusted and competitive in your industry.',
+    image: '/media/social-media.webp'
   }
 ];
 
@@ -383,7 +383,7 @@ export default function Page() {
             </div>
 
             <div className="media-frame hero-media">
-              <img src="/media/hero-showcase.svg" alt="SME digital package dashboard preview" />
+              <img src="/media/hero-showcase.webp" alt="SME digital package dashboard preview" />
             </div>
 
             <div className="mini-grid">
@@ -449,7 +449,7 @@ export default function Page() {
             <p>For SMEs that want one practical package covering website presence, SEO strength, content visibility and basic ongoing website care.</p>
 
             <div className="media-frame combo-media">
-              <img src="/media/combo-showcase.svg" alt="Digital growth combo visual" />
+              <img src="/media/combo-showcase.webp" alt="Digital growth combo visual" />
             </div>
 
             <div className="combo-price">
@@ -505,9 +505,9 @@ export default function Page() {
         <div className="section-header">
           <div>
             <div className="section-kicker">Media Area</div>
-            <h2>Add your own media</h2>
+            <h2>See how your brand can look online</h2>
           </div>
-          <p>Place client images, sample post designs, reel thumbnails, website screenshots or campaign visuals inside <code>public/media</code> and update the image paths in <code>app/page.tsx</code>.</p>
+          
         </div>
 
         <div className="media-grid">
