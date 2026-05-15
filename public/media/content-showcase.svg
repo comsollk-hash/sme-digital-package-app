@@ -1,8 +1,0 @@
-<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="520" rx="30" fill="#111827"/>
-  <rect x="100" y="78" width="700" height="360" rx="30" fill="white" fill-opacity="0.08"/>
-  <rect x="145" y="124" width="190" height="250" rx="26" fill="#38BDF8" fill-opacity="0.22"/>
-  <rect x="365" y="124" width="190" height="250" rx="26" fill="#A78BFA" fill-opacity="0.22"/>
-  <rect x="585" y="124" width="170" height="250" rx="26" fill="#22C55E" fill-opacity="0.18"/>
-  <text x="100" y="482" fill="#BAE6FD" font-family="Arial" font-size="34" font-weight="700">Add Case Study Media</text>
-</svg>

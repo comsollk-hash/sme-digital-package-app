@@ -1,8 +1,0 @@
-<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="520" rx="30" fill="#0D1424"/>
-  <circle cx="450" cy="240" r="150" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.14" stroke-width="4"/>
-  <circle cx="450" cy="240" r="86" fill="#38BDF8" fill-opacity="0.20"/>
-  <path d="M450 138V104M450 376V342M552 240H586M314 240H348M522 168L546 144M354 336L378 312M378 168L354 144M546 336L522 312" stroke="white" stroke-opacity="0.70" stroke-width="14" stroke-linecap="round"/>
-  <path d="M410 246L438 274L500 202" stroke="white" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="170" y="482" fill="#BBF7D0" font-family="Arial" font-size="34" font-weight="700">Monthly Website Care</text>
-</svg>
