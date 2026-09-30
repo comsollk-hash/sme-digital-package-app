@@ -78,7 +78,7 @@ const websiteServices: Service[] = [
     title: '3-Page Static Website + Basic SEO',
     description: 'A clean, simple business website for SMEs that need to look professional online quickly.',
     price: 75000,
-    priceSuffix: '/ project',
+    priceSuffix: 'Upwards',
     media: '/media/static-website.webp',
     features: ['Home, About and Contact/Service page', 'Basic SEO setup', 'Mobile responsive layout', 'Suitable for new SMEs']
   },
@@ -90,7 +90,7 @@ const websiteServices: Service[] = [
     title: 'Website + Advanced SEO + Speed + Security',
     description: 'A stronger website package for businesses that need visibility, performance and improved technical confidence.',
     price: 150000,
-    priceSuffix: '/ project',
+    priceSuffix: 'Upwards',
     featured: true,
     media: '/media/advanced-website.webp',
     features: ['Website setup or improvement', 'Advanced SEO implementation', 'Speed optimisation', 'Basic security setup']
