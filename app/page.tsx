@@ -146,6 +146,16 @@ function ServiceCard({ service, selected, onSelect }: { service: Service; select
       <h3>{service.title}</h3>
       <p className="desc">{service.description}</p>
       <div className="price"><strong>{formatLKR(service.price)}</strong><span>{service.priceSuffix}</span></div>
+
+{service.category === 'social' && (
+  <div className="boosting-note">
+    <span className="boosting-icon">!</span>
+    <span>
+      <strong>Boosting not included</strong>
+      <small>Paid advertising and media spend are charged separately.</small>
+    </span>
+  </div>
+)}
       <ul className="features">
         {service.features.map((feature) => (
           <li key={feature}><span className="check">✓</span>{feature}</li>
