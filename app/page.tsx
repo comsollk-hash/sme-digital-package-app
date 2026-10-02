@@ -533,7 +533,7 @@ export default function Page() {
 
       <section className="cta-panel" id="contact">
         <div>
-          <h2>Looking for the right media solution for your brand?</h2>
+          <h2>Looking for the right solution to create the best digital presence for your brand?</h2>
           <p>Explore our platform network, content opportunities and visibility options designed to connect brands with relevant audiences across Sri Lanka.</p>
           <p>For partnerships, media collaborations and customised proposals, speak with our team.</p>
           <div className="contact-line">info@communicasolutions.com · communicasolutions.com · +94 77 761 4719</div>
