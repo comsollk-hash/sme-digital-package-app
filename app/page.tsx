@@ -360,7 +360,7 @@ export default function Page() {
     <main className="page" ref={pageRef}>
       <nav className="nav hide-in-pdf" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="SME Digital Media Package home">
-          <div className="logo">C</div>
+          <div className="logo"><img src="/media/partners/communicasolutions.png" alt="Communica Solutions" /></div>
           <div className="brand-text">
             <strong>Communica Solutions</strong>
             <span>SME Digital Media Packages</span>
@@ -552,48 +552,24 @@ export default function Page() {
           <div className="contact-line">info@communicasolutions.com · communicasolutions.com · +94 77 761 4719</div>
         </div>
         <div className="cta-actions hide-in-pdf">
-          <a className="btn btn-primary" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-            <span aria-hidden="true" className="btn-icon">💬</span>
-            Talk to Our Team
+          <a className="btn btn-whatsapp" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" className="btn-icon" viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+              <path d="M19.11 17.26c-.3-.15-1.78-.88-2.05-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.5-.17 0-.37-.02-.57-.02-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.1 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.07-.12-.27-.2-.57-.35zM16.03 5.2C9.95 5.2 5 10.15 5 16.23c0 1.95.51 3.86 1.48 5.53L5 27.2l5.59-1.46a10.99 10.99 0 005.44 1.44h.01c6.07 0 11.02-4.95 11.02-11.03 0-2.94-1.15-5.71-3.23-7.79a10.95 10.95 0 00-7.8-3.21zm0 20.14h-.01a9.14 9.14 0 01-4.66-1.28l-.34-.2-3.46.91.93-3.37-.22-.35a9.1 9.1 0 01-1.4-4.86 9.17 9.17 0 019.17-9.16c2.45 0 4.75.96 6.48 2.69a9.1 9.1 0 012.69 6.48c0 5.06-4.12 9.17-9.18 9.17z"/>
+            </svg>
+            <span className="btn-label">
+              <strong>Talk to Our Team</strong>
+              <small>WhatsApp +94 77 761 4719</small>
+            </span>
           </a>
           <a className="btn btn-secondary" href="#platforms">View Our Platforms</a>
           <button className="btn btn-secondary" type="button" onClick={downloadFullPagePdf} disabled={isPdfBusy}>Download Full PDF</button>
         </div>
       </section>
 
-      <section className="section partners-section" id="platforms">
-        <div className="section-header">
-          <div>
-            <div className="section-kicker">Our Platform Network</div>
-            <h2>Reach audiences across our brands</h2>
-          </div>
-          <p>Communica Solutions operates a network of digital publications and marketplaces across Sri Lanka. Explore each platform below.</p>
-        </div>
-
-        <div className="partners-grid">
-          {partnerPlatforms.map((partner) => (
-            <a
-              key={partner.url}
-              className="partner-card"
-              href={partner.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${partner.name} — opens in a new tab`}
-            >
-              <div className="partner-logo">
-                <img src={partner.logo} alt={`${partner.name} logo`} />
-              </div>
-              <span className="partner-name">{partner.name}</span>
-              <span className="partner-url">{partner.url.replace(/^https?:\/\//, '')}</span>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <footer className="site-footer">
+      <footer className="site-footer" id="platforms">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="logo">C</div>
+            <div className="logo"><img src="/media/partners/communicasolutions.png" alt="Communica Solutions" /></div>
             <div className="brand-text">
               <strong>Communica Solutions</strong>
               <span>SME Digital Media Packages</span>
