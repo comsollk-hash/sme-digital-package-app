@@ -118,6 +118,18 @@ const initialEstimateItems: EstimateItem[] = [
   { id: 'maintenance', label: 'Website Maintenance', detail: 'Monthly website support', price: 50000, checked: true }
 ];
 
+const WHATSAPP_URL = 'https://wa.me/94777614719?text=Hi%20Communica%20Solutions%2C%20I%27d%20like%20to%20talk%20about%20an%20SME%20digital%20package.';
+
+const partnerPlatforms = [
+  { name: 'Communica Solutions', url: 'https://communicasolutions.com', logo: '/media/partners/communicasolutions.png' },
+  { name: 'Satyn Online', url: 'https://satynmag.com', logo: '/media/partners/satynmag.png' },
+  { name: 'Vyapara.lk', url: 'https://vyapara.lk', logo: '/media/partners/vyapara.png' },
+  { name: 'Lanka Biz News', url: 'https://lankabiznews.com', logo: '/media/partners/lankabiznews.png' },
+  { name: 'Liya.lk', url: 'https://liya.lk', logo: '/media/partners/liya.png' },
+  { name: 'Snehidi', url: 'https://snehidi.com', logo: '/media/partners/snehidi.png' },
+  { name: 'Bride Sri Lanka', url: 'https://bridesrilanka.com', logo: '/media/partners/bridesrilanka.png' }
+];
+
 const mediaHighlights = [
   {
     title: 'Content that builds visibility',
@@ -360,6 +372,7 @@ export default function Page() {
           <a href="#website">Website</a>
           <a href="#combo">Combo Pack</a>
           <a href="#media">Media</a>
+          <a href="#platforms">Platforms</a>
         </div>
 
         <button className="nav-cta" type="button" onClick={downloadFullPagePdf} disabled={isPdfBusy}>
@@ -539,10 +552,80 @@ export default function Page() {
           <div className="contact-line">info@communicasolutions.com · communicasolutions.com · +94 77 761 4719</div>
         </div>
         <div className="cta-actions hide-in-pdf">
-          <a className="btn btn-primary" href="mailto:info@communicasolutions.com?subject=SME%20Digital%20Media%20Package%20Enquiry">Email Us</a>
+          <a className="btn btn-primary" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true" className="btn-icon">💬</span>
+            Talk to Our Team
+          </a>
+          <a className="btn btn-secondary" href="#platforms">View Our Platforms</a>
           <button className="btn btn-secondary" type="button" onClick={downloadFullPagePdf} disabled={isPdfBusy}>Download Full PDF</button>
         </div>
       </section>
+
+      <section className="section partners-section" id="platforms">
+        <div className="section-header">
+          <div>
+            <div className="section-kicker">Our Platform Network</div>
+            <h2>Reach audiences across our brands</h2>
+          </div>
+          <p>Communica Solutions operates a network of digital publications and marketplaces across Sri Lanka. Explore each platform below.</p>
+        </div>
+
+        <div className="partners-grid">
+          {partnerPlatforms.map((partner) => (
+            <a
+              key={partner.url}
+              className="partner-card"
+              href={partner.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${partner.name} — opens in a new tab`}
+            >
+              <div className="partner-logo">
+                <img src={partner.logo} alt={`${partner.name} logo`} />
+              </div>
+              <span className="partner-name">{partner.name}</span>
+              <span className="partner-url">{partner.url.replace(/^https?:\/\//, '')}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <footer className="site-footer">
+        <div className="footer-top">
+          <div className="footer-brand">
+            <div className="logo">C</div>
+            <div className="brand-text">
+              <strong>Communica Solutions</strong>
+              <span>SME Digital Media Packages</span>
+            </div>
+          </div>
+          <div className="footer-contact">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">+94 77 761 4719</a>
+            <a href="mailto:info@communicasolutions.com">info@communicasolutions.com</a>
+            <a href="https://communicasolutions.com" target="_blank" rel="noopener noreferrer">communicasolutions.com</a>
+          </div>
+        </div>
+
+        <div className="footer-platforms" aria-label="Our platforms">
+          {partnerPlatforms.map((partner) => (
+            <a
+              key={`footer-${partner.url}`}
+              className="footer-logo"
+              href={partner.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={partner.name}
+              aria-label={partner.name}
+            >
+              <img src={partner.logo} alt={partner.name} />
+            </a>
+          ))}
+        </div>
+
+        <div className="footer-bottom">
+          <span>© {new Date().getFullYear()} Communica Solutions. All rights reserved.</span>
+        </div>
+      </footer>
 
       <div className={`toast ${toast ? 'show' : ''}`}>{toast}</div>
     </main>
