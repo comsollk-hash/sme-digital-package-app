@@ -533,8 +533,9 @@ export default function Page() {
 
       <section className="cta-panel" id="contact">
         <div>
-          <h2>Need a proposal version for a client?</h2>
-          <p>Use this interactive price guide as a sales landing page, or export the full page as a PDF for clients who do not have access to the website.</p>
+          <h2>Looking for the right media solution for your brand?</h2>
+          <p>Explore our platform network, content opportunities and visibility options designed to connect brands with relevant audiences across Sri Lanka.</p>
+          <p>For partnerships, media collaborations and customised proposals, speak with our team.</p>
           <div className="contact-line">info@communicasolutions.com · communicasolutions.com · +94 77 761 4719</div>
         </div>
         <div className="cta-actions hide-in-pdf">
