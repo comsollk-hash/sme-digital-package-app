@@ -599,22 +599,99 @@ h2 { font-size: clamp(1.8rem, 3vw, 3rem); letter-spacing: -0.055em; line-height:
   .price-grid, .website-grid, .media-grid { grid-template-columns: 1fr; }
   .section-header { align-items: flex-start; flex-direction: column; }
   .hero-panel { min-height: auto; }
+  .cta-actions { flex-direction: column; align-items: stretch; width: 100%; }
+  .cta-actions .btn { width: 100%; }
 }
 
 @media (max-width: 720px) {
   .page { width: min(100% - 22px, 1180px); padding-top: 14px; }
-  .nav { align-items: flex-start; border-radius: 24px; flex-direction: column; position: static; }
-  .nav-links { width: 100%; justify-content: space-between; overflow-x: auto; }
-  .nav-cta { width: 100%; text-align: center; }
-  .section, .cta-panel { padding: 24px; }
-  .site-footer { padding: 24px 20px; }
-  .mini-grid { grid-template-columns: 1fr; }
+  .nav {
+    align-items: stretch;
+    border-radius: 20px;
+    flex-direction: column;
+    position: static;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+  .brand { min-width: 0; flex-wrap: nowrap; }
+  .brand-text { min-width: 0; }
+  .brand-text strong { font-size: 0.95rem; }
+  .brand-text span { font-size: 0.74rem; }
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { padding: 9px 12px; font-size: 0.84rem; }
+  .nav-cta { width: 100%; text-align: center; padding: 12px 14px; }
+  .hero { gap: 24px; margin-bottom: 36px; }
+  .hero-panel { border-radius: 24px; }
+  .dashboard { padding: 18px; gap: 14px; }
+  .hero-media { height: 150px; }
+  .hero-actions { width: 100%; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .section { margin-top: 22px; padding: 22px 18px; border-radius: 24px; }
+  .cta-panel { margin-top: 22px; padding: 24px 20px; border-radius: 24px; gap: 20px; }
+  .site-footer { padding: 24px 18px; border-radius: 24px; margin-top: 22px; }
+  .section-header { margin-bottom: 20px; gap: 10px; }
+  .section-header p { font-size: 0.92rem; }
+  .mini-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .metric { padding: 14px; min-height: 100px; }
+  .metric b { font-size: 1.3rem; }
   .toggle-wrap { width: 100%; display: grid; grid-template-columns: 1fr 1fr; }
-  .tab-btn { width: 100%; }
-  .total-box { flex-direction: column; align-items: stretch; }
+  .tab-btn { width: 100%; padding: 11px 10px; font-size: 0.84rem; }
+  .price-card { min-height: auto; padding: 18px; }
+  .price-card .desc { min-height: 0; margin-bottom: 16px; }
+  .combo-card { padding: 24px 20px; }
+  .combo-card h3 { font-size: 1.6rem; }
+  .combo-price strong { font-size: 2.4rem; }
+  .builder { padding: 20px 18px; }
+  .total-box { flex-direction: column; align-items: stretch; gap: 12px; padding: 18px; }
+  .total-box strong { font-size: 1.7rem; }
   .copy-btn { width: 100%; }
-  .footer-logo { width: 78px; height: 54px; }
-  .btn-whatsapp { width: 100%; }
+  .footer-top { gap: 14px; }
+  .footer-contact { gap: 10px 14px; font-size: 0.82rem; }
+  .footer-platforms { gap: 10px; padding: 20px 0; }
+  .footer-logo { width: 72px; height: 50px; padding: 6px 10px; }
+  .btn-whatsapp { width: 100%; min-height: 60px; padding: 10px 16px; }
   .btn-label { align-items: center; }
-  h1 { font-size: clamp(2.4rem, 15vw, 4rem); }
+  .btn-label strong { font-size: 0.9rem; }
+  .btn-label small { font-size: 0.74rem; }
+  .cta-panel h2 { font-size: clamp(1.4rem, 6vw, 2rem); }
+  h1 { font-size: clamp(2.4rem, 12vw, 3.6rem); margin-bottom: 18px; }
+  h2 { font-size: clamp(1.6rem, 6.5vw, 2.4rem); }
+}
+
+@media (max-width: 480px) {
+  .page { width: min(100% - 16px, 1180px); padding-top: 10px; }
+  .nav { padding: 10px 12px; }
+  .brand { gap: 10px; }
+  .logo { width: 40px; height: 40px; }
+  .brand-text strong { font-size: 0.88rem; }
+  .brand-text span { font-size: 0.7rem; }
+  .nav-links a { padding: 8px 10px; font-size: 0.8rem; }
+  .section, .cta-panel, .site-footer { padding: 20px 16px; border-radius: 20px; }
+  .eyebrow { font-size: 0.78rem; padding: 7px 11px; }
+  .hero p { font-size: 0.95rem; line-height: 1.65; }
+  .mini-grid { grid-template-columns: 1fr; }
+  .boosting-note { padding: 10px 12px; }
+  .boosting-note strong { font-size: 0.78rem; }
+  .boosting-note small { font-size: 0.7rem; }
+  .footer-platforms { gap: 8px; padding: 18px 0; }
+  .footer-logo { width: 62px; height: 44px; padding: 5px 8px; }
+  .footer-brand { flex-direction: column; text-align: center; gap: 8px; }
+  .footer-brand .brand-text { text-align: center; }
+  .footer-contact { justify-content: center; gap: 6px 12px; font-size: 0.8rem; text-align: center; }
+  .contact-line { font-size: 0.85rem; }
+  .btn { min-height: 46px; padding: 0 14px; font-size: 0.9rem; }
+  .btn-whatsapp { min-height: 58px; }
+  .combo-price strong { font-size: 2rem; }
+  .total-box strong { font-size: 1.5rem; }
+  .option { padding: 12px; }
+  .option strong { font-size: 0.9rem; }
+  .option span span { font-size: 0.78rem; }
 }
